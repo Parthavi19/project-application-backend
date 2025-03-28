@@ -4,6 +4,8 @@ import cors from "cors";
 import authRoutes from "./routes/auth.routes.js";
 import projectRoutes from "./routes/project.routes.js";
 import prisma from "./config/db.js";
+import meetingRoutes from "./routes/meeting.routes.js";
+app.use("/api/meetings", meetingRoutes);
 
 dotenv.config();
 const app = express();

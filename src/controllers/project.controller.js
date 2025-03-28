@@ -101,3 +101,8 @@ export const handleApplication = async (req, res) => {
   }
 };
 
+import { sendEmail } from "../utils/email.js";
+
+// Inside applyForProject function
+await sendEmail(faculty.email, "New Project Application", `${student.name} applied for ${project.title}.`);
+
