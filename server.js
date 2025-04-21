@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
+import downloadRoutes from "./routes/download.routes.js";
 
 dotenv.config();
 const app = express();
@@ -33,3 +34,4 @@ app.post("/login", async (req, res) => {
 // Start Server
 app.listen(5000, () => console.log("Server running on port 5000"));
 
+app.use("/api/download", downloadRoutes);
