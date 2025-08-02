@@ -1,0 +1,7 @@
+pywebview
+google-generativeai
+pyinstaller
+PyGithub
+GitPython
+meta-ai-api
+tkhtmlview
